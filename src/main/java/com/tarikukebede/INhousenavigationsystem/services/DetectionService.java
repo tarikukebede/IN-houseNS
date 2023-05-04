@@ -24,7 +24,7 @@ public class DetectionService extends ServiceTemplate<Detection, UUID> {
 
     public Detection create(DetectionInDto request){
         MobileStation mobileStation = mobileStationService.get(request.getMobile_station_id());
-        return super.create(new Detection(request.getDistance(), request.getTimeStamp(), mobileStation, null));
+        return super.create(new Detection(request.getDistance().floatValue(), request.getTimeStamp(), mobileStation, null));
     }
 
     public List<Detection> createAll(List<DetectionInDto> detectionInDtos){

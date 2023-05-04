@@ -14,10 +14,9 @@ import java.lang.annotation.Target;
  * validates UUIds using a regex patteren
  * */
 @Target(ElementType.FIELD)
-@Constraint(validatedBy = {})
 @Retention(RetentionPolicy.RUNTIME)
-@Pattern(regexp="^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$|")
 @ReportAsSingleViolation
+@Constraint(validatedBy = ValidateUUID.class)
 public @interface ValidUUID {
     String message() default "Invalid UUID";
     Class<?>[] groups()default {};

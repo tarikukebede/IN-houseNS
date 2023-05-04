@@ -5,10 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.UUID;
 
@@ -16,8 +14,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class DetectionInDto {
+    @ValidUUID
     private UUID mobile_station_id;
 
-    private float distance;
+    @NotNull(message = "distance can not be null")
+    @DecimalMin(value = "0", message = "distance can not be negative")
+    private BigDecimal distance;
+    @NotBlank
     private Date timeStamp;
 }

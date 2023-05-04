@@ -10,8 +10,8 @@ public class Transform {
 
     public static MobileStation toMobileStation(MobileStationInDto mobileStationInDto){
         return MobileStation.builder()
-                .lastKnownX(mobileStationInDto.getLastKnownX())
-                .lastKnownY(mobileStationInDto.getLastKnownY())
+                .lastKnownX(mobileStationInDto.getLastKnownX().floatValue())
+                .lastKnownY(mobileStationInDto.getLastKnownY().floatValue())
                 .detections(new ArrayList<>())
                 .build();
     }

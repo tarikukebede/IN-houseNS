@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.UUID;
 
@@ -15,6 +16,8 @@ public class ReportInDto {
 
   @ValidUUID
   private UUID base_station_id;
+
+  @Valid
   private ArrayList<DetectionInDto> reports;
 
 }
