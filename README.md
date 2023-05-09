@@ -1,5 +1,5 @@
 # IN-HOUSE NAVIGATION SYS
-![IN-Navigation SYS.png](..%2F..%2F..%2F..%2FDownloads%2FIN-Navigation%20SYS.png)
+![Frame 1 (1)](https://github.com/tarikukebede/IN-houseNS/assets/46628322/fd160835-b5f9-4bfe-86a0-0bddfdc618b9)
 ### What's implemented
 
 
