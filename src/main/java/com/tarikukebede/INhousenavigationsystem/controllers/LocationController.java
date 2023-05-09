@@ -20,6 +20,6 @@ public class LocationController {
 
     @GetMapping("/{id}")
     public LocationOutDto get(@PathVariable UUID id) {
-        return service.get(id);
+        return service.getMobileStationLocation(id);
     }
 }

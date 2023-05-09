@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -18,7 +19,7 @@ import java.util.Collection;
 public class Report extends Model{
    @ManyToOne
    private BaseStation baseStation;
-   @OneToMany
+   @OneToMany(mappedBy = "report", cascade = CascadeType.ALL)
    @JsonManagedReference
    private Collection<Detection> detections = new ArrayList<>();
 }

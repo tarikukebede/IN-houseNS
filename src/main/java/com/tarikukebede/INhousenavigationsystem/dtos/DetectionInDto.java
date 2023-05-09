@@ -15,11 +15,11 @@ import java.util.UUID;
 @NoArgsConstructor
 public class DetectionInDto {
     @ValidUUID
-    private UUID mobile_station_id;
+    private UUID mobileStationId;
 
     @NotNull(message = "distance can not be null")
     @DecimalMin(value = "0", message = "distance can not be negative")
     private BigDecimal distance;
-    @NotBlank
+    @NotNull
     private Date timeStamp;
 }

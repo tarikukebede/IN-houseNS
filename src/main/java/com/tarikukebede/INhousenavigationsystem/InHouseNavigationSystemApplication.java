@@ -10,4 +10,5 @@ public class InHouseNavigationSystemApplication {
 		SpringApplication.run(InHouseNavigationSystemApplication.class, args);
 	}
 
+
 }

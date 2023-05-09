@@ -15,7 +15,7 @@ public class LocationOutDto {
     private UUID mobileId;
     private float x;
     private float y;
-    private float error_radius;
-    private int error_code;
-    private String error_description;
+    private float errorRadius;
+    private int errorCode;
+    private String errorDescription;
 }

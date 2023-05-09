@@ -18,6 +18,6 @@ public class ReportInDto {
   private UUID base_station_id;
 
   @Valid
-  private ArrayList<DetectionInDto> reports;
+  private ArrayList<DetectionInDto> detections;
 
 }

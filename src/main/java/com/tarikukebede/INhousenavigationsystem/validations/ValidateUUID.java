@@ -6,7 +6,6 @@ import java.util.UUID;
 import java.util.regex.Pattern;
 
 public class ValidateUUID implements ConstraintValidator<ValidUUID, UUID> {
-
     @Override
     public void initialize(ValidUUID constraintAnnotation) {
     }

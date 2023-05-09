@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
@@ -23,7 +24,7 @@ public class MobileStation extends Model{
     private float lastKnownX;
     @NotNull(message = "lastKnownY is required")
     private float lastKnownY;
-    @OneToMany
+    @OneToMany(mappedBy = "mobileStation", cascade = CascadeType.ALL)
     @JsonManagedReference
     private Collection<Detection> detections = new ArrayList<>();
 }
