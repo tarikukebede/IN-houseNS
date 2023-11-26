@@ -1,20 +1,19 @@
-# IN-HOUSE NAVIGATION SYS
+# Trilateration-based Navigation System
 ![Frame 1 (1)](https://github.com/tarikukebede/IN-houseNS/assets/46628322/fd160835-b5f9-4bfe-86a0-0bddfdc618b9)
-### What's implemented
+### Description
 
+This project demonstrates a navigation system utilizing trilateration techniques to determine the precise location of a mobile station within a designated environment. 
+Trilateration, a mathematical method based on measuring distances to known reference points, is employed to calculate the mobile station's coordinates.
 
+### Features
+#### Trilateration Algorithm Implementation: 
+Algorithms for trilateration are used to process signal data received from multiple reference points.
 
-- API endpoints for
-    - Create Mobile Station
-    - Create Base Station
-    - Create Report
-    - Get Location
+#### Data Processing and Calculation: 
+The system computes the mobile station's location by analyzing signal strength or time-of-flight measurements from reference points.
 
-- Error handling
-- Validation
-- CORS configuration
-- Documentation
-- Unit Test
+#### Location Estimation: 
+The calculated coordinates represent the precise position of the mobile station relative to the known reference points.
 
 #### Technologies Used
 
